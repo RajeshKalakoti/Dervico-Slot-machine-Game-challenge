@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slot Machine Game</title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
+</head>
+<body>
+       <div>
+       <header class="heading">
+              <h1> Dervico slot machine challenge for  interview </h1>
+       </header>
+       </div>
+
+     <div class="container">
+          <div class="wrapper">
+     	<div class="reels">
+     		<div id="reel-top">
+     			<img id="reel-top-slot1Img" border=1 alt="slot image"
+     			       src="images/2xBAR.png">
+     			<img id="reel-top-slot2Img" border=1 alt="slot image"
+     			       src="images/3xBAR.png">
+     			<img id="reel-top-slot3Img" border=1 alt="slot image"
+     			       src="images/7.png">
+     		</div>
+     		<div id="reel-center">
+     			<img id="reel-center-slot4Img" border=1 alt="slot image"
+     			       src="images/2xBAR.png">
+     			<img id="reel-center-slot5Img" border=1 alt="slot image"
+     			       src="images/3xBAR.png">
+     			<img id="reel-center-slot6Img" border=1 alt="slot image"
+     			       src="images/7.png">
+     		</div>
+     		<div id="reel-bottom">
+     			<img id="reel-bottom-slot7Img" border=1 alt="slot image"
+     			       src="images/2xBAR.png">
+     			<img id="reel-bottom-slot8Img" border=1 alt="slot image"
+     			       src="images/3xBAR.png">
+     			<img id="reel-bottom-slot9Img" border=1 alt="slot image"
+     			       src="images/7.png">
+     		</div>
+     	</div>
+     	<div class="pay-table">
+               <label>Winning Amount: </label>
+     		<label id="paytable">0</label>
+     	</div>
+
+     	<div class="balance-details">
+               <input type="text" name="balance" id="balance" placeholder="Enter balance(1-5000)">
+     	</div>
+          <div class="debug-area">
+               <label>Mode: </label>
+               <select id="mode">  
+                 <option value="random">Random Mode</option>
+                 <option value="fixed">Fixed Mode</option>
+               </select>
+               <br>
+               <label>Parameter for Reel 1: </label>
+               <select class="select" id="reel1-para1">
+                 <option value="0">2xBAR</option>
+                 <option value="1">3xBAR</option>
+                 <option value="2">7</option>
+                 <option value="3">BAR</option>
+                 <option value="3">Cherry</option>
+               </select>
+               <select class="select" id="reel1-para2">
+                 <option value="top">Top</option>
+                 <option value="center">Center</option>
+                 <option value="bottom">bottom</option>
+               </select>
+
+               <br>
+               <label>Parameter for Reel 2: </label>
+               <select class="select" id="reel2-para1">
+                 <option value="0">2xBAR</option>
+                 <option value="1">3xBAR</option>
+                 <option value="2">7</option>
+                 <option value="3">BAR</option>
+                 <option value="3">Cherry</option>
+               </select>
+               <select class="select" id="reel2-para2">
+                 <option value="top">Top</option>
+                 <option value="center">Center</option>
+                 <option value="bottom">bottom</option>
+               </select>
+
+               <br>
+               <label>Parameter for Reel 3: </label>
+               <select class="select" id="reel3-para1">
+                 <option value="0">2xBAR</option>
+                 <option value="1">3xBAR</option>
+                 <option value="2">7</option>
+                 <option value="3">BAR</option>
+                 <option value="3">Cherry</option>
+               </select>
+               <select class="select" id="reel3-para2">
+                 <option value="top">Top</option>
+                 <option value="center">Center</option>
+                 <option value="bottom">bottom</option>
+               </select>
+
+          </div>
+
+     	<div class="spin">
+     		<input type="button" id="spin" value="Click to Spin" onclick="startSlotMachine();">
+     	</div>
+          </div>
+     </div>
+
+
+
+
+</body>
+</html>
